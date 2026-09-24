@@ -1,0 +1,154 @@
+.post-job-page {
+    min-height: 100vh;
+    background: #f6faf7;
+    padding: 40px 20px 70px;
+}
+
+.post-job-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.post-job-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    color: #00883f;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.post-job-back:hover {
+    color: #006f33;
+}
+
+.post-job-header {
+    margin-bottom: 30px;
+}
+
+.post-job-header span {
+    color: #00883f;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.post-job-header h1 {
+    margin: 7px 0 8px;
+    color: #17281e;
+    font-size: 34px;
+}
+
+.post-job-header p {
+    margin: 0;
+    max-width: 600px;
+    color: #718078;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.post-job-form {
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e4ece7;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(20, 50, 30, 0.05);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: #26372d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #dce6df;
+    border-radius: 10px;
+    outline: none;
+    background: #ffffff;
+    color: #26372d;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #00883f;
+    box-shadow: 0 0 0 3px rgba(0, 136, 63, 0.08);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 160px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aa59f;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.post-job-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #00883f;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.post-job-button:hover {
+    background: #007535;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+
+    .post-job-page {
+        padding: 25px 15px 50px;
+    }
+
+    .post-job-header h1 {
+        font-size: 28px;
+    }
+
+    .post-job-form {
+        padding: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}

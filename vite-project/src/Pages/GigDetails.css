@@ -1,0 +1,55 @@
+/* Features section */
+.gig-features {
+    margin-top: 35px;
+}
+
+.gig-features h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #111713;
+}
+
+.gig-feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.gig-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.check-circle {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+    background: #eaf8f0;
+    color: #00883f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.check-circle svg {
+    width: 17px;
+    height: 17px;
+    stroke-width: 3;
+}
+
+.gig-feature strong {
+    display: block;
+    font-size: 15px;
+    color: #111713;
+    margin-bottom: 4px;
+}
+
+.gig-feature p {
+    margin: 0;
+    font-size: 14px;
+    color: #68736c;
+    line-height: 1.5;
+}

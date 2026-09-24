@@ -1,0 +1,585 @@
+
+.browse-page {
+    min-height: 100vh;
+    padding: 80px 6%;
+    background: #f7faf8;
+}
+
+.browse-header {
+    max-width: 1200px;
+    margin: 0 auto 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.browse-label {
+    color: #1f8f5f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.browse-header h1 {
+    margin: 8px 0;
+    font-size: 42px;
+    color: #17231d;
+}
+
+.browse-header p {
+    margin: 0;
+    color: #777;
+}
+
+.add-skill-button {
+    border: none;
+    background: #1f8f5f;
+    color: white;
+
+    padding: 13px 20px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.add-skill-button:hover {
+    background: #167448;
+    transform: translateY(-2px);
+}
+
+
+.skills-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+
+
+.skill-card {
+    background: white;
+
+    border: 1px solid #e9eee9;
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+
+    transition: 0.25s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.skill-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-category {
+    background: #e9f7ef;
+    color: #1f8f5f;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+.delete-skill {
+    border: none;
+    background: transparent;
+
+    color: #aaa;
+
+    cursor: pointer;
+
+    font-size: 17px;
+}
+
+.delete-skill:hover {
+    color: #d64545;
+}
+
+
+.skill-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 22px 0 15px;
+
+    border-radius: 14px;
+
+    background: #1f8f5f;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.skill-card h2 {
+    margin: 0 0 10px;
+
+    font-size: 20px;
+    color: #1b2921;
+}
+
+.skill-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+
+    min-height: 45px;
+}
+
+
+.skill-bottom {
+    margin-top: 25px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #eeeeee;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-bottom small {
+    display: block;
+
+    color: #999;
+    font-size: 11px;
+}
+
+.skill-bottom strong {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #1f8f5f;
+
+    font-size: 18px;
+}
+
+
+.view-skill {
+    border: 1px solid #1f8f5f;
+    text-decoration: none;
+    background: white;
+    color: #1f8f5f;
+
+    padding: 9px 13px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+
+
+.add-skill-card {
+    min-height: 320px;
+
+    border: 2px dashed #b8d8c5;
+
+    border-radius: 16px;
+
+    background: #fafffb;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.add-skill-card:hover {
+    border-color: #1f8f5f;
+    background: #f2faf5;
+    transform: translateY(-4px);
+}
+
+
+.plus-circle {
+    width: 58px;
+    height: 58px;
+
+    border: 2px solid #1f8f5f;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #1f8f5f;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.add-skill-card h2 {
+    margin: 0 0 8px;
+
+    color: #1d3025;
+    font-size: 19px;
+}
+
+.add-skill-card p {
+    max-width: 220px;
+
+    color: #888;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+
+.skill-modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 999;
+}
+
+
+.skill-modal {
+    width: 100%;
+    max-width: 500px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    position: relative;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+
+.close-modal {
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    border: none;
+    background: #f2f2f2;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+
+.skill-modal h2 {
+    margin: 0;
+
+    color: #1c2b22;
+}
+
+.skill-modal > p {
+    margin: 7px 0 25px;
+
+    color: #888;
+    font-size: 14px;
+}
+
+
+.skill-modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-modal label {
+    margin-top: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #333;
+}
+
+.skill-modal input,
+.skill-modal select,
+.skill-modal textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ddd;
+
+    border-radius: 9px;
+
+    padding: 12px 13px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+}
+
+.skill-modal textarea {
+    resize: vertical;
+}
+
+.skill-modal input:focus,
+.skill-modal select:focus,
+.skill-modal textarea:focus {
+    border-color: #1f8f5f;
+}
+
+
+.save-skill {
+    margin-top: 15px;
+
+    border: none;
+
+    background: #1f8f5f;
+
+    color: white;
+
+    padding: 13px;
+
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.save-skill:hover {
+    background: #167448;
+}
+
+@media (max-width: 900px) {
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .browse-page {
+        padding: 55px 5%;
+    }
+
+    .browse-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .browse-header h1 {
+        font-size: 32px;
+    }
+
+    .add-skill-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-modal {
+        padding: 24px;
+    }
+
+}
+
+.skill-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    background: #f1f5f3;
+}
+
+.skill-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1f8f5f;
+    font-size: 32px;
+}
+
+.skill-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #e8f6ef;
+    color: #1f8f5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.skill-features {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #e8eee9;
+}
+
+.skill-features h3 {
+    margin: 0 0 18px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #17231d;
+}
+
+.skill-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 13px;
+    color: #4f5b54;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.skill-feature-check {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e8f7ef;
+    color: #1f8f5f;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.image-upload-box {
+    border: 2px dashed #d9e2dc;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-upload-box input {
+    display: none;
+}
+
+.image-upload-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: #00883f;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.image-upload-button:hover {
+    background: #007236;
+}
+
+.image-preview {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 16px auto 0;
+}

@@ -1,0 +1,409 @@
+
+/* =========================================
+   REGISTER PAGE
+========================================= */
+
+.register-page {
+    min-height: 100vh;
+    padding: 100px 30px 50px;
+    box-sizing: border-box;
+    background: #f7f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================
+   LEFT INFORMATION SIDE
+========================================= */
+
+.register-info {
+    padding: 55px;
+    background: #f0f8f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register-logo {
+    color: #222;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.register-info-content {
+    max-width: 440px;
+    margin: auto 0;
+}
+
+.register-small-title {
+    margin: 0 0 15px;
+    color: #1f8f5f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.register-info h1 {
+    margin: 0 0 20px;
+    color: #222;
+    font-size: 44px;
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+.register-info-content > p:not(.register-small-title) {
+    margin: 0;
+    max-width: 430px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.register-benefits {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.benefit > span {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #1f8f5f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.benefit h3 {
+    margin: 0 0 4px;
+    color: #222;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.benefit p {
+    margin: 0;
+    color: #777;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   RIGHT FORM SIDE
+========================================= */
+
+.register-form-section {
+    padding: 55px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form-wrapper {
+    width: 100%;
+    max-width: 430px;
+}
+
+
+/* =========================================
+   FORM HEADING
+========================================= */
+
+.register-heading {
+    margin-bottom: 30px;
+}
+
+.form-eyebrow {
+    margin: 0 0 10px;
+    color: #1f8f5f;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.register-heading h2 {
+    margin: 0 0 9px;
+    color: #222;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+}
+
+.register-heading > p:last-child {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+}
+
+.register-heading a {
+    color: #1f8f5f;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-heading a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 46px;
+    padding: 0 13px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 9px;
+    outline: none;
+    background: #ffffff;
+    color: #222;
+    font-family: inherit;
+    font-size: 13px;
+    transition: 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #1f8f5f;
+    box-shadow: 0 0 0 3px rgba(31, 143, 95, 0.1);
+}
+
+
+/* =========================================
+   ERROR / SUCCESS
+========================================= */
+
+.register-error {
+    padding: 11px 13px;
+    border-radius: 8px;
+    background: #fff1f1;
+    border: 1px solid #ffd6d6;
+    color: #d64545;
+    font-size: 12px;
+}
+
+.register-success {
+    padding: 11px 13px;
+    border-radius: 8px;
+    background: #effaf4;
+    border: 1px solid #ccebd9;
+    color: #167448;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   TERMS
+========================================= */
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin-top: 2px;
+}
+
+.terms input {
+    width: 15px;
+    height: 15px;
+    margin: 1px 0 0;
+    flex-shrink: 0;
+    accent-color: #1f8f5f;
+    cursor: pointer;
+}
+
+.terms label {
+    color: #777;
+    font-size: 11px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   REGISTER BUTTON
+========================================= */
+
+.register-button {
+    width: 100%;
+    height: 48px;
+    margin-top: 3px;
+    border: none;
+    border-radius: 9px;
+    background: #1f8f5f;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.register-button:hover {
+    background: #167448;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.register-footer {
+    margin-top: 22px;
+    padding-top: 17px;
+    border-top: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.register-footer p {
+    margin: 0;
+    color: #999;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .register-page {
+        padding: 100px 20px 40px;
+    }
+
+    .register-container {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .register-info {
+        padding: 40px;
+    }
+
+    .register-info-content {
+        margin-top: 60px;
+    }
+
+    .register-info h1 {
+        font-size: 38px;
+    }
+
+    .register-form-section {
+        padding: 40px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .register-page {
+        padding: 90px 14px 30px;
+        align-items: flex-start;
+    }
+
+    .register-container {
+        border-radius: 18px;
+    }
+
+    .register-info {
+        padding: 30px 25px;
+    }
+
+    .register-logo {
+        font-size: 23px;
+    }
+
+    .register-info-content {
+        margin-top: 45px;
+    }
+
+    .register-info h1 {
+        font-size: 32px;
+    }
+
+    .register-info-content > p:not(.register-small-title) {
+        font-size: 14px;
+    }
+
+    .register-benefits {
+        margin-top: 30px;
+        gap: 18px;
+    }
+
+    .register-form-section {
+        padding: 30px 25px;
+    }
+
+    .register-heading h2 {
+        font-size: 26px;
+    }
+}
+

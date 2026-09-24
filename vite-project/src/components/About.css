@@ -1,0 +1,391 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    padding: 100px 7%;
+    background: #f7faf8;
+    overflow: hidden;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 80px;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.about-content {
+    max-width: 620px;
+}
+
+.about-content .section-label {
+    display: inline-block;
+    margin-bottom: 14px;
+
+    color: #00883f;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.about-content h2 {
+    margin: 0 0 20px;
+
+    color: #111713;
+
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -2px;
+}
+
+.about-content h2 span {
+    color: #00883f;
+}
+
+.about-content > p {
+    max-width: 590px;
+    margin: 0 0 14px;
+
+    color: #68736c;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 25px;
+
+    margin: 28px 0 32px;
+}
+
+.about-feature {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #303b34;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.about-feature svg {
+    flex-shrink: 0;
+
+    color: #00883f;
+    font-size: 17px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.about-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 13px 20px;
+
+    border-radius: 9px;
+
+    background: #00883f;
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 750;
+    text-decoration: none;
+
+    box-shadow: 0 8px 20px rgba(0, 136, 63, 0.16);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.about-button:hover {
+    background: #007436;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 136, 63, 0.22);
+}
+
+.about-button svg {
+    font-size: 15px;
+    transition: transform 0.25s ease;
+}
+
+.about-button:hover svg {
+    transform: translateX(4px);
+}
+
+/* =========================
+   RIGHT VISUAL
+========================= */
+
+.about-visual {
+    position: relative;
+
+    min-height: 430px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main card */
+
+.about-card {
+    border: 1px solid #dce8e0;
+    background: #ffffff;
+
+    box-shadow: 0 20px 50px rgba(0, 70, 35, 0.09);
+}
+
+.main-card {
+    position: relative;
+    z-index: 2;
+
+    width: 320px;
+    min-height: 270px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 22px;
+}
+
+.about-card-icon {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border-radius: 17px;
+
+    background: #e4f6eb;
+
+    font-size: 30px;
+}
+
+.main-card h3 {
+    margin: 0 0 10px;
+
+    color: #172019;
+
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.main-card p {
+    margin: 0;
+
+    color: #718078;
+
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* =========================
+   FLOATING CARDS
+========================= */
+
+.small-card {
+    position: absolute;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 18px 22px;
+
+    min-width: 145px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 15px 35px rgba(0, 60, 30, 0.1);
+}
+
+.small-card strong {
+    margin-bottom: 4px;
+
+    color: #00883f;
+
+    font-size: 23px;
+    font-weight: 850;
+}
+
+.small-card span {
+    color: #6e7972;
+
+    font-size: 10px;
+    font-weight: 650;
+}
+
+.top-card {
+    top: 45px;
+    right: 0;
+}
+
+.bottom-card {
+    bottom: 45px;
+    left: 0;
+}
+
+/* =========================
+   DECORATIVE BACKGROUND
+========================= */
+
+.about-visual::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: #e5f5eb;
+
+    filter: blur(2px);
+}
+
+/* Keep cards above decoration */
+
+.about-visual .about-card {
+    position: relative;
+}
+
+.about-visual .main-card {
+    position: relative;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+    .about-section {
+        padding: 80px 5%;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .about-content {
+        max-width: 700px;
+    }
+
+    .about-visual {
+        min-height: 380px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .about-section {
+        padding: 65px 5%;
+    }
+
+    .about-container {
+        gap: 45px;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+        letter-spacing: -1.2px;
+    }
+
+    .about-content > p {
+        font-size: 13px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .about-visual {
+        min-height: 350px;
+    }
+
+    .main-card {
+        width: 270px;
+        min-height: 240px;
+        padding: 28px;
+    }
+
+    .top-card {
+        top: 15px;
+        right: -5px;
+    }
+
+    .bottom-card {
+        bottom: 15px;
+        left: -5px;
+    }
+
+    .small-card {
+        min-width: 125px;
+        padding: 15px 17px;
+    }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 430px) {
+
+    .about-content h2 {
+        font-size: 29px;
+    }
+
+    .about-visual {
+        min-height: 320px;
+    }
+
+    .main-card {
+        width: 245px;
+        min-height: 225px;
+        padding: 24px;
+    }
+
+    .top-card {
+        right: -10px;
+    }
+
+    .bottom-card {
+        left: -10px;
+    }
+}

@@ -1,0 +1,607 @@
+/* =========================
+   SETTINGS PAGE
+========================= */
+
+.settings-page {
+    min-height: 100vh;
+    padding: 50px 25px 80px;
+    background:
+        linear-gradient(
+            180deg,
+            #f3faf5 0%,
+            #f7faf8 45%,
+            #ffffff 100%
+        );
+}
+
+.settings-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.settings-back {
+    width: fit-content;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 35px;
+
+    color: #5f7066;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.settings-back svg {
+    transition: 0.3s ease;
+}
+
+.settings-back:hover {
+    color: #00883f;
+}
+
+.settings-back:hover svg {
+    transform: translateX(-4px);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.settings-header {
+    margin-bottom: 35px;
+}
+
+.settings-label {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    border-radius: 30px;
+
+    background: #e8f7ed;
+    border: 1px solid #c8ecd4;
+
+    color: #00883f;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.settings-header h1 {
+    margin: 16px 0 10px;
+
+    color: #12251a;
+
+    font-size: 42px;
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+}
+
+.settings-header p {
+    max-width: 560px;
+
+    margin: 0;
+
+    color: #718078;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.settings-success {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 22px;
+    padding: 15px 18px;
+
+    border: 1px solid #bfe8cb;
+    border-radius: 12px;
+
+    background: #ecf9f0;
+    color: #087a3d;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   SETTINGS CARD
+========================= */
+
+.settings-card {
+    margin-bottom: 22px;
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3ece6;
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 35px rgba(20, 70, 40, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.settings-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 18px 45px rgba(20, 70, 40, 0.08);
+}
+
+
+/* =========================
+   CARD HEADER
+========================= */
+
+.settings-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #edf1ee;
+}
+
+.settings-icon,
+.settings-danger-icon {
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    font-size: 22px;
+}
+
+.settings-icon {
+    background: #eaf8ef;
+    color: #00883f;
+}
+
+.settings-danger-icon {
+    background: #fff0f0;
+    color: #d83b3b;
+}
+
+.settings-card-header h2 {
+    margin: 0 0 6px;
+
+    color: #17281e;
+
+    font-size: 20px;
+}
+
+.settings-card-header p {
+    margin: 0;
+
+    color: #77857d;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.settings-form {
+    display: grid;
+    gap: 20px;
+}
+
+.settings-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.settings-field label {
+    color: #26382d;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.settings-field input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    border: 1px solid #dfe8e2;
+    border-radius: 12px;
+
+    outline: none;
+
+    background: #fbfdfb;
+
+    color: #26382d;
+
+    font-size: 15px;
+
+    transition:
+        border 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.settings-field input:focus {
+    border-color: #00883f;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 4px rgba(0, 136, 63, 0.1);
+}
+
+
+/* =========================
+   MAIN BUTTON
+========================= */
+
+.settings-button {
+    width: fit-content;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    margin-top: 5px;
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 11px;
+
+    background: #00883f;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.settings-button:hover {
+    background: #006f33;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(0, 136, 63, 0.2);
+}
+
+
+/* =========================
+   NOTIFICATIONS
+========================= */
+
+.settings-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    padding: 20px;
+
+    background: #f8fbf9;
+
+    border: 1px solid #e8efea;
+    border-radius: 14px;
+}
+
+.settings-option strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #26382d;
+
+    font-size: 15px;
+}
+
+.settings-option p {
+    margin: 0;
+
+    color: #77857d;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SWITCH
+========================= */
+
+.settings-switch {
+    position: relative;
+
+    flex-shrink: 0;
+
+    width: 52px;
+    height: 28px;
+
+    cursor: pointer;
+}
+
+.settings-switch input {
+    width: 0;
+    height: 0;
+
+    opacity: 0;
+}
+
+.settings-switch span {
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 30px;
+
+    background: #d6ded9;
+
+    transition: 0.3s ease;
+}
+
+.settings-switch span::before {
+    content: "";
+
+    position: absolute;
+
+    width: 22px;
+    height: 22px;
+
+    left: 3px;
+    top: 3px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s ease;
+}
+
+.settings-switch input:checked + span {
+    background: #00883f;
+}
+
+.settings-switch input:checked + span::before {
+    transform: translateX(24px);
+}
+
+
+/* =========================
+   SECONDARY BUTTON
+========================= */
+
+.settings-secondary-button {
+    padding: 12px 18px;
+
+    border: 1px solid #cfdad3;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #304238;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.settings-secondary-button:hover {
+    border-color: #00883f;
+
+    color: #00883f;
+
+    background: #f2fbf5;
+}
+
+
+/* =========================
+   DANGER / LOGOUT
+========================= */
+
+.settings-danger-card {
+    border-color: #f0dddd;
+}
+
+.settings-logout-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 12px 18px;
+
+    border: 1px solid #f0caca;
+    border-radius: 10px;
+
+    background: #fff7f7;
+    color: #cf3535;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.settings-logout-button:hover {
+    background: #cf3535;
+    color: #ffffff;
+
+    border-color: #cf3535;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   NOT LOGGED IN
+========================= */
+
+.settings-page .settings-card h1 {
+    margin-top: 0;
+
+    color: #17281e;
+}
+
+.settings-page .settings-card > p {
+    margin-bottom: 22px;
+
+    color: #718078;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 700px) {
+
+    .settings-page {
+        padding: 35px 18px 60px;
+    }
+
+    .settings-header h1 {
+        font-size: 34px;
+    }
+
+    .settings-card {
+        padding: 24px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .settings-page {
+        padding: 25px 14px 50px;
+    }
+
+    .settings-back {
+        margin-bottom: 28px;
+    }
+
+    .settings-header h1 {
+        font-size: 30px;
+    }
+
+    .settings-header p {
+        font-size: 14px;
+    }
+
+    .settings-card {
+        padding: 20px;
+
+        border-radius: 16px;
+    }
+
+    .settings-card-header {
+        gap: 12px;
+
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .settings-icon,
+    .settings-danger-icon {
+        width: 44px;
+        height: 44px;
+
+        border-radius: 12px;
+
+        font-size: 19px;
+    }
+
+    .settings-card-header h2 {
+        font-size: 17px;
+    }
+
+    .settings-card-header p {
+        font-size: 13px;
+    }
+
+    .settings-option {
+        align-items: flex-start;
+
+        padding: 16px;
+    }
+
+    .settings-button {
+        width: 100%;
+    }
+
+    .settings-secondary-button,
+    .settings-logout-button {
+        width: 100%;
+    }
+}

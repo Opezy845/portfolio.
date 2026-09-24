@@ -1,0 +1,275 @@
+/* ================================
+   APPLICATION PAGE
+================================ */
+
+.application-page {
+    min-height: 100vh;
+    background: #f7faf8;
+    padding: 40px 20px 80px;
+}
+
+.application-container {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+}
+
+/* Back button */
+
+.application-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #58635d;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    transition: 0.2s ease;
+}
+
+.application-back:hover {
+    color: #00883f;
+}
+
+/* Header */
+
+.application-header {
+    margin-bottom: 30px;
+}
+
+.application-label {
+    display: inline-block;
+    color: #00883f;
+    background: #e9f8ef;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.application-header h1 {
+    margin: 0;
+    color: #151a17;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.application-header p {
+    margin: 10px 0 0;
+    color: #68736d;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Main layout */
+
+.application-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(300px, 0.9fr);
+    gap: 24px;
+    align-items: start;
+}
+
+/* Cards */
+
+.application-card,
+.project-card {
+    background: #ffffff;
+    border: 1px solid #e6ebe8;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(20, 40, 30, 0.05);
+}
+
+/* Application form */
+
+.application-card {
+    padding: 30px;
+}
+
+.application-card h2 {
+    margin: 0 0 7px;
+    font-size: 21px;
+    color: #171c19;
+}
+
+.application-card > p {
+    margin: 0 0 28px;
+    color: #748079;
+    font-size: 14px;
+}
+
+/* Form groups */
+
+.application-form-group {
+    margin-bottom: 24px;
+}
+
+.application-form-group label {
+    display: block;
+    margin-bottom: 9px;
+    color: #252c28;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.application-form-group textarea,
+.application-form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dfe6e2;
+    border-radius: 12px;
+    padding: 14px 15px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #252b28;
+    background: #fbfcfb;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.application-form-group textarea {
+    min-height: 180px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.application-form-group textarea:focus,
+.application-form-group input:focus {
+    border-color: #00883f;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 136, 63, 0.08);
+}
+
+.application-form-group textarea::placeholder,
+.application-form-group input::placeholder {
+    color: #a0aaa5;
+}
+
+/* Submit button */
+
+.application-submit {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 20px;
+    background: #00883f;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.application-submit:hover {
+    background: #007236;
+    transform: translateY(-1px);
+}
+
+/* Project card */
+
+.project-card {
+    padding: 26px;
+    position: sticky;
+    top: 95px;
+}
+
+.project-card-label {
+    display: inline-block;
+    color: #00883f;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.project-card h2 {
+    margin: 0 0 20px;
+    color: #171c19;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 20px;
+    border-top: 1px solid #edf0ee;
+}
+
+.project-info-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project-info-item span:first-child {
+    color: #7a847f;
+    font-size: 13px;
+}
+
+.project-info-item span:last-child {
+    color: #242b27;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.project-budget {
+    color: #00883f !important;
+    font-size: 17px !important;
+}
+
+.project-description {
+    margin-top: 24px;
+    padding-top: 22px;
+    border-top: 1px solid #edf0ee;
+}
+
+.project-description h3 {
+    margin: 0 0 9px;
+    color: #252b28;
+    font-size: 14px;
+}
+
+.project-description p {
+    margin: 0;
+    color: #737d77;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+    .application-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        position: static;
+    }
+}
+
+@media (max-width: 600px) {
+    .application-page {
+        padding: 25px 15px 50px;
+    }
+
+    .application-header h1 {
+        font-size: 28px;
+    }
+
+    .application-card,
+    .project-card {
+        padding: 22px;
+        border-radius: 15px;
+    }
+
+    .application-header {
+        margin-bottom: 22px;
+    }
+}

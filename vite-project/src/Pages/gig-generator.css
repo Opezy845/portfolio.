@@ -1,0 +1,240 @@
+.gig-generator-page {
+    min-height: 100vh;
+    background: #f7faf8;
+    padding: 40px 20px 80px;
+}
+
+.gig-generator-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gig-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    text-decoration: none !important;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.gig-back:hover {
+    color: #00883f;
+}
+
+.gig-generator-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gig-generator-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #00883f;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.gig-generator-header h1 {
+    margin: 0 0 15px;
+    font-size: 44px;
+    color: #17251d;
+}
+
+.gig-generator-header h1 span {
+    color: #00883f;
+}
+
+.gig-generator-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #66736b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.gig-generator-form {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    border: 1px solid #e4ebe6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #25352c;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 15px;
+    border: 1px solid #d9e2dc;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #222;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #00883f;
+    box-shadow: 0 0 0 3px rgba(0, 136, 63, 0.08);
+}
+
+.generate-gig-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #00883f;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.generate-gig-button:hover {
+    background: #006f32;
+    transform: translateY(-2px);
+}
+
+.generated-gig {
+    margin-top: 30px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #e4ebe6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.generated-gig-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.generated-gig-header h2 {
+    margin: 0;
+    color: #17251d;
+}
+
+.generated-gig-header span {
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #eaf8ef;
+    color: #00883f;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.generated-section {
+    padding: 20px 0;
+    border-top: 1px solid #edf1ee;
+}
+
+.generated-section h3 {
+    margin: 0;
+    color: #25352c;
+    font-size: 15px;
+}
+
+.generated-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.generated-title-row button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    background: transparent;
+    color: #00883f;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.generated-title {
+    margin: 12px 0 0;
+    color: #17251d;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.generated-description {
+    margin: 12px 0 0;
+    color: #66736b;
+    line-height: 1.7;
+}
+
+.gig-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.gig-tags span {
+    padding: 8px 12px;
+    border-radius: 20px;
+    background: #f0f7f2;
+    color: #00883f;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .gig-generator-page {
+        padding: 25px 15px 50px;
+    }
+
+    .gig-generator-header h1 {
+        font-size: 34px;
+    }
+
+    .gig-generator-form,
+    .generated-gig {
+        padding: 22px;
+    }
+
+    .generated-gig-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
